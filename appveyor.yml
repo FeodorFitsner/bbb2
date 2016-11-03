@@ -19,8 +19,8 @@ environment:
 cache:
 - wxWidgets.7z
 - Appveyor.NUnitLogger.zip
-- C:\go16
-- C:\Projects\2\node.zip
+#- C:\go16
+#- C:\Projects\2\node.zip
 - packages
 
 install:
