@@ -2,7 +2,7 @@ version: 1.0.{build}
 clone_folder: C:\projects\2$(GOPATH)
 init:
 - ps: >-
-    Update-AppveyorBuild -Message "Google storage and cache (with nuget)"
+    Update-AppveyorBuild -Message "Google storage and cache (with nuget), 2 cache items removed"
 
     Start-sleep -s 1
 
@@ -17,9 +17,9 @@ environment:
   MY_DIST_DIR: '%appveyor_build_folder%\${DIST_NAME}'
   DIST_NAME: dist-aaa
 cache:
-- wxWidgets.7z
+#- wxWidgets.7z
 - Appveyor.NUnitLogger.zip
-- C:\go16
+#- C:\go16
 - C:\Projects\2\node.zip
 build_script:
 - ps: >-
