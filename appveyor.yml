@@ -2,7 +2,7 @@ version: 1.0.{build}
 clone_folder: C:\projects\2$(GOPATH)
 init:
 - ps: >-
-    Update-AppveyorBuild -Message "Amazon S3 storage and cache (with nuget)"
+    Update-AppveyorBuild -Message "Google storage and cache (with nuget)"
 
     Start-sleep -s 1
 
@@ -36,7 +36,7 @@ test_script:
 
     appveyor PushArtifact "C:\Projects\2\products.zip"
 
-    appveyor PushArtifact "C:\Projects\2\newtonsoft.json.6.0.3.nupkg"
+    appveyor PushArtifact "C:\Projects\2\newtonsoft.json.5.0.5.nupkg"
 artifacts:
 - path: go16
 - path: node.zip
